@@ -1,0 +1,10 @@
+"//.*": comment
+"main": main
+"Public static void": pub_stat
+"import ": import
+"public class": pub_class
+"throws ": throws
+";": end_of_expression
+"System.": sys
+"int ": int
+"\".*\"": string

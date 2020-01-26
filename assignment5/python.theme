@@ -1,0 +1,11 @@
+comment: 32
+special: 38;5;208
+while: 38;5;171
+decorator: 91
+import: 33
+string: 38;5;155
+def: 34
+if-states: 38;5;87
+try-ex: 38;5;199
+var: 38;5;147
+python_comment: 37

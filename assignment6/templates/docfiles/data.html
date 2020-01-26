@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>data</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/niklasalexsander/iCloud%20Drive%20%28arkiv%29/Documents/Dokumenter/IN3110-tasks/assignment6/data.py">/Users/niklasalexsander/iCloud Drive (arkiv)/Documents/Dokumenter/IN3110-tasks/assignment6/data.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-diabetes_dataset"><strong>diabetes_dataset</strong></a>()</dt><dd><tt>Reads&nbsp;the&nbsp;file&nbsp;diabetes.csv&nbsp;with&nbsp;pandas,&nbsp;and&nbsp;creating&nbsp;a&nbsp;training&nbsp;and&nbsp;validation&nbsp;set.<br>
+&nbsp;<br>
+The&nbsp;function&nbsp;will&nbsp;remove&nbsp;any&nbsp;rows&nbsp;with&nbsp;NA&nbsp;values.<br>
+The&nbsp;training&nbsp;set&nbsp;includes&nbsp;80&nbsp;percent&nbsp;of&nbsp;the&nbsp;data&nbsp;from&nbsp;diabetes.csv,&nbsp;while&nbsp;the&nbsp;rest<br>
+is&nbsp;included&nbsp;in&nbsp;the&nbsp;validation&nbsp;set.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns:&nbsp;data_frame&nbsp;(pandas&nbsp;DataFrame):&nbsp;diabetes&nbsp;dataset<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;training_set&nbsp;(pandas&nbsp;DataFrame):&nbsp;training&nbsp;set<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validation_set&nbsp;(pandas&nbsp;DataFrame):&nbsp;validation&nbsp;set</tt></dd></dl>
+ <dl><dt><a name="-scatter_plot_diabetes_2_dimentions"><strong>scatter_plot_diabetes_2_dimentions</strong></a>(df, feature_1, feature_2, colors=None)</dt><dd><tt>Makes&nbsp;a&nbsp;scatter-plot&nbsp;with&nbsp;the&nbsp;given&nbsp;dataframe,&nbsp;features&nbsp;and&nbsp;colors.<br>
+&nbsp;<br>
+Iterates&nbsp;through&nbsp;the&nbsp;given&nbsp;dataframe,&nbsp;looking&nbsp;at&nbsp;the&nbsp;features&nbsp;compared&nbsp;to<br>
+'diabetes'&nbsp;column,&nbsp;and&nbsp;color&nbsp;the&nbsp;classes&nbsp;differently.&nbsp;the&nbsp;different&nbsp;classes<br>
+are&nbsp;saved&nbsp;in&nbsp;a&nbsp;legend.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;df&nbsp;(pandas&nbsp;DataFrame):&nbsp;DataFrame&nbsp;to&nbsp;collect&nbsp;values&nbsp;from.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;feature_1&nbsp;(string):&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;first&nbsp;column<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;feature_2&nbsp;(string):&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;second&nbsp;column<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colors=None&nbsp;(Dictionary):&nbsp;class&nbsp;name&nbsp;as&nbsp;key,&nbsp;color&nbsp;as&nbsp;value</tt></dd></dl>
+</td></tr></table>
+</body></html>

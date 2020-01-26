@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module fitting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>fitting</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/niklasalexsander/iCloud%20Drive%20%28arkiv%29/Documents/Dokumenter/IN3110-tasks/assignment6/fitting.py">/Users/niklasalexsander/iCloud Drive (arkiv)/Documents/Dokumenter/IN3110-tasks/assignment6/fitting.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="data.html">data</a><br>
+</td><td width="25%" valign=top><a href="sklearn.metrics.html">sklearn.metrics</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-fit"><strong>fit</strong></a>(training_set, classifier_type, list_of_features, targeted_column)</dt><dd><tt>Fitting&nbsp;a&nbsp;given&nbsp;set&nbsp;with&nbsp;a&nbsp;given&nbsp;classifier,&nbsp;features&nbsp;and&nbsp;targeted&nbsp;column.<br>
+KNN:&nbsp;n_neighbors=1<br>
+SVC:&nbsp;gamma='scale'<br>
+LR:&nbsp;solver='lbfgs',&nbsp;max_iter=200<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;training_set&nbsp;(pandas&nbsp;DataFrame):&nbsp;the&nbsp;DataFrame&nbsp;to&nbsp;fit&nbsp;the&nbsp;features<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classifier_type(string):&nbsp;The&nbsp;classifier&nbsp;to&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list_of_features(list:string):&nbsp;List&nbsp;containing&nbsp;all&nbsp;the&nbsp;features&nbsp;to&nbsp;be&nbsp;fitted<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;targeted_column(string):&nbsp;column&nbsp;to&nbsp;compare.&nbsp;(contains&nbsp;classes&nbsp;to&nbsp;check&nbsp;if&nbsp;right&nbsp;or&nbsp;wrong)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classifier(sklearn.classification.(KNN|SVC|LR)):&nbsp;a&nbsp;fitted&nbsp;classifier.&nbsp;Could&nbsp;be&nbsp;either&nbsp;(KNN,SVC&nbsp;or&nbsp;LR)</tt></dd></dl>
+</td></tr></table>
+</body></html>

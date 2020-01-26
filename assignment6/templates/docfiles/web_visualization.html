@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module web_visualization</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>web_visualization</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/niklasalexsander/iCloud%20Drive%20%28arkiv%29/Documents/Dokumenter/IN3110-tasks/assignment6/web_visualization.py">/Users/niklasalexsander/iCloud Drive (arkiv)/Documents/Dokumenter/IN3110-tasks/assignment6/web_visualization.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="base64.html">base64</a><br>
+<a href="data.html">data</a><br>
+</td><td width="25%" valign=top><a href="fitting.html">fitting</a><br>
+<a href="matplotlib.html">matplotlib</a><br>
+</td><td width="25%" valign=top><a href="sklearn.metrics.html">sklearn.metrics</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="visualize.html">visualize</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-data_page"><strong>data_page</strong></a>()</dt><dd><tt>Handles&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;help&nbsp;page&nbsp;of&nbsp;'data.py'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('docfiles/data.html'):&nbsp;renders&nbsp;data.html</tt></dd></dl>
+ <dl><dt><a name="-fitting_page"><strong>fitting_page</strong></a>()</dt><dd><tt>Handles&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;help&nbsp;page&nbsp;of&nbsp;'fitting.py'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('docfiles/fitting.html'):&nbsp;renders&nbsp;fitting.html</tt></dd></dl>
+ <dl><dt><a name="-handle_feature_1"><strong>handle_feature_1</strong></a>()</dt><dd><tt>Handles&nbsp;the&nbsp;button-action&nbsp;from&nbsp;submitting&nbsp;checkbox-choices.<br>
+&nbsp;<br>
+The&nbsp;returns&nbsp;will&nbsp;render&nbsp;the&nbsp;given&nbsp;html,&nbsp;while&nbsp;the&nbsp;arguments&nbsp;given&nbsp;will&nbsp;'send'<br>
+variables&nbsp;to&nbsp;the&nbsp;html-file.<br>
+If&nbsp;two&nbsp;checkboxes&nbsp;are&nbsp;marked,&nbsp;the&nbsp;return&nbsp;function&nbsp;will&nbsp;be&nbsp;given&nbsp;some&nbsp;file-paths<br>
+for&nbsp;displaying&nbsp;three&nbsp;different&nbsp;scatterplots&nbsp;corresponding&nbsp;to&nbsp;the&nbsp;given&nbsp;parameters,<br>
+as&nbsp;well&nbsp;as&nbsp;the&nbsp;validation&nbsp;accuracy&nbsp;and&nbsp;the&nbsp;training&nbsp;accuracy.<br>
+If&nbsp;1-8&nbsp;hitboxes&nbsp;are&nbsp;checked&nbsp;(except&nbsp;2)&nbsp;the&nbsp;return&nbsp;will&nbsp;only&nbsp;be&nbsp;given&nbsp;two&nbsp;parameters,&nbsp;the<br>
+validation&nbsp;accuracy&nbsp;and&nbsp;the&nbsp;training&nbsp;accuracy.<br>
+In&nbsp;any&nbsp;other&nbsp;instance&nbsp;the&nbsp;return&nbsp;will&nbsp;only&nbsp;return&nbsp;to&nbsp;the&nbsp;default&nbsp;html&nbsp;'web.html'<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('INSERT-HTML-PATH',args)&nbsp;(render-function):&nbsp;renders&nbsp;the&nbsp;given&nbsp;html.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('web.html')&nbsp;(render-function):&nbsp;renders&nbsp;the&nbsp;'standard'-html.</tt></dd></dl>
+ <dl><dt><a name="-help_page"><strong>help_page</strong></a>()</dt><dd><tt>Handles&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;help&nbsp;page.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('docfiles/Assignment6_web_help.html'):&nbsp;renders&nbsp;Assignment6_web_help.html</tt></dd></dl>
+ <dl><dt><a name="-picture_prosess"><strong>picture_prosess</strong></a>(features, targeted_column, classifier)</dt><dd><tt>Calls&nbsp;upon&nbsp;data.diabetes_dataset()&nbsp;and&nbsp;fitting.fit()&nbsp;to&nbsp;predict&nbsp;and&nbsp;calculate<br>
+accuracy&nbsp;to&nbsp;be&nbsp;displayed&nbsp;on&nbsp;the&nbsp;web-page.&nbsp;Visualize.visualizer()&nbsp;will&nbsp;also&nbsp;be<br>
+called&nbsp;if&nbsp;only&nbsp;two&nbsp;checkboxes&nbsp;are&nbsp;checked.<br>
+&nbsp;<br>
+The&nbsp;scatterplots&nbsp;are&nbsp;saved&nbsp;in&nbsp;buffers&nbsp;to&nbsp;avoid&nbsp;problems&nbsp;with&nbsp;matplotlib,&nbsp;flask,<br>
+and&nbsp;python.&nbsp;There&nbsp;has&nbsp;been&nbsp;some&nbsp;problems&nbsp;occurring&nbsp;testing&nbsp;(Mac)&nbsp;with&nbsp;all<br>
+the&nbsp;latest&nbsp;updates&nbsp;to&nbsp;the&nbsp;packages.&nbsp;Without&nbsp;the&nbsp;buffers&nbsp;the&nbsp;scatterplots&nbsp;would&nbsp;not<br>
+be&nbsp;updated&nbsp;in&nbsp;real&nbsp;time&nbsp;when&nbsp;checking&nbsp;new&nbsp;checkboxes&nbsp;without&nbsp;having&nbsp;to&nbsp;restart<br>
+the&nbsp;page.&nbsp;Since&nbsp;the&nbsp;scatterplots&nbsp;should&nbsp;only&nbsp;be&nbsp;displayed&nbsp;when&nbsp;2&nbsp;checkboxes&nbsp;are<br>
+marked,&nbsp;the&nbsp;whole&nbsp;buffer&nbsp;and&nbsp;scatter-plot&nbsp;action&nbsp;is&nbsp;inside&nbsp;an&nbsp;if-statement.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;features&nbsp;(list:String):&nbsp;list&nbsp;containing&nbsp;names&nbsp;of&nbsp;features(columns)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;targeted_column&nbsp;(String):&nbsp;name&nbsp;of&nbsp;column<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classifier&nbsp;(String):&nbsp;name&nbsp;of&nbsp;classifier<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t_ac&nbsp;(float):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v_ac&nbsp;(float):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;img1&nbsp;(string):&nbsp;scatter&nbsp;plot&nbsp;object&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;img2&nbsp;(string):&nbsp;scatter&nbsp;plot&nbsp;object&nbsp;2</tt></dd></dl>
+ <dl><dt><a name="-start"><strong>start</strong></a>()</dt><dd><tt>Starting&nbsp;template&nbsp;of&nbsp;the&nbsp;'server'&nbsp;when&nbsp;running&nbsp;'web_visualization.py'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('INSERT-HTML-PATH')&nbsp;(render-function):&nbsp;renders&nbsp;the&nbsp;given&nbsp;html.</tt></dd></dl>
+ <dl><dt><a name="-visualize_page"><strong>visualize_page</strong></a>()</dt><dd><tt>Handles&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;help&nbsp;page&nbsp;of&nbsp;'visualize.py'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('docfiles/visualize.html'):&nbsp;renders&nbsp;visualize.html</tt></dd></dl>
+ <dl><dt><a name="-web_visualization_page"><strong>web_visualization_page</strong></a>()</dt><dd><tt>Handles&nbsp;the&nbsp;link&nbsp;to&nbsp;the&nbsp;help&nbsp;page&nbsp;of&nbsp;'web_visualization.py'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Return:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render_template('docfiles/web_visualization.html'):&nbsp;renders&nbsp;web_visualization.html</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>app</strong> = &lt;Flask 'web_visualization'&gt;<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;</td></tr></table>
+</body></html>

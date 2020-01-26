@@ -1,0 +1,11 @@
+"NNNN.*(?:$|\n)": comment
+"True|False|None": special
+"\bwhile\b": while
+"@\w+": decorator
+"\bimport\b": import
+"\".*\"": string
+"\bdef\b": def
+"\bif\b|else:|\belif\b": if-states
+"try:|except:": try-ex
+"^\s*(\w+)(?=(\W*)=)": var
+"#.*?$": python_comment

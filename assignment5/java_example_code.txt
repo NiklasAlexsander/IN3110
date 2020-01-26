@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class ChangeMaker
+{
+    Public static void main (String [], args)
+    {
+        int amount, originalAmount
+        System.out.println("Hello")
+        Scanner scan = new Scanner()
+        throw Exception{
+        //This is a comment
+    }
+}
+}

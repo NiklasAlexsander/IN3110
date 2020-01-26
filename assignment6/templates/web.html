@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web</title>
+    </head>
+    <p><a href="{{ url_for('help_page') }}">Click on this link to access the help page</a></p>
+    <form action="handle_features" method="POST">
+        <p> Pick between 1-7 features:</p>
+        <p> (If you want to display the classifiers please pick 2 features)</p>
+        <input type="checkbox" name="features_checkbox" value="pregnant">Pregnant<br>
+        <input type="checkbox" name="features_checkbox" value="glucose">Glucose<br>
+        <input type="checkbox" name="features_checkbox" value="pressure">Pressure<br>
+        <input type="checkbox" name="features_checkbox" value="triceps">Triceps<br>
+        <input type="checkbox" name="features_checkbox" value="insulin">Insulin<br>
+        <input type="checkbox" name="features_checkbox" value="mass">Mass<br>
+        <input type="checkbox" name="features_checkbox" value="pedigree">Pedigree<br>
+        <input type="checkbox" name="features_checkbox" value="age">Age<br>
+        <p>Classifier:</p>
+        <select name=classifier>
+            <option value="KNN">KNN</option>
+            <option value="SVC">SVC</option>
+            <option value="LR">LR</option>
+        </select>
+        <p>Submit your choices here!</p>
+        <input type="submit" value="Submit">
+    <body>
+        <p>{{ error_message }}<p>
+        <p>{{ name }}</p>
+        <div><img src='{{ url1 }}'></div>
+        <p>Training map</p>
+        <div><img src='{{ url2 }}'></div>
+        <p>Validation map</p>
+        <div><img src='{{ url3 }}'></div>
+        <p>Training_accuracy: {{ training_accuracy }}</p>
+        <p>Validation_accuracy: {{ validation_accuracy }}</p>
+    </body>
+</html>

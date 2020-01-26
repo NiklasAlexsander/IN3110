@@ -1,0 +1,6 @@
+This is a demo-file of the grep.py-file.
+Lorem ipsum dolor sit amet.
+Lines that matches the given regex should be printed.
+This is a test-line.
+This is an additional line.
+Extra
